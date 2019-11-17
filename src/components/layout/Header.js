@@ -7,8 +7,8 @@ export default function header() {
       <header>
         <div className='headerContent' >
           <h1 className='appName'>TodoList</h1>
-          <Link to="/">Home</Link>
-          <Link to="/about" style={{marginLeft: '24px'}}>About</Link>
+          <Link to="/" className='navLink'>Home</Link>
+          <Link to="/about" className='navLink'>About</Link>
         </div>
       </header>
     </React.Fragment>
