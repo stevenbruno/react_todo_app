@@ -1,18 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function header() {
   return (
-    <div>
-      <header style={headerStyle}>
-        <h1>TodoList</h1>
+    <React.Fragment>
+      <header>
+        <div className='headerContent' >
+          <h1 className='appName'>TodoList</h1>
+          <Link to="/">Home</Link>
+          <Link to="/about" style={{marginLeft: '24px'}}>About</Link>
+        </div>
       </header>
-    </div>
+    </React.Fragment>
   )
-}
-
-const headerStyle = {
-  fontFamily: 'Georgia, serif',
-  color: '#333',
-  textAlign: 'center',
-  padding: '10px',
 }
